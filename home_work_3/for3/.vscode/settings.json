@@ -1,0 +1,12 @@
+{
+    "files.associations": {
+        "istream": "cpp",
+        "limits": "cpp",
+        "utility": "cpp",
+        "xlocale": "cpp",
+        "xmemory": "cpp",
+        "xstring": "cpp",
+        "xutility": "cpp",
+        "ostream": "cpp"
+    }
+}
