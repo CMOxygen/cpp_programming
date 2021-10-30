@@ -337,7 +337,7 @@ void separate(int *arr, const int size)
         }
         counter++;
 
-        if (size % 3 == 0)
+        if (size % arraysCount == 0)
         {
             run = absDouble((double)sum(results[0], size) - meanValue) > 0 || absDouble((double)sum(results[1], size) - meanValue) > 0 || absDouble((double)sum(results[2], size) - meanValue) > 0;
         }

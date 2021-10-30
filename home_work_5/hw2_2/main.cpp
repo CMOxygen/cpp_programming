@@ -48,7 +48,6 @@ public:
     int sumH(int **arr, int size);
     int getAbs(int value);
 };
-
 ArraySorter::ArraySorter()
 {
     arr = nullptr;
@@ -188,7 +187,6 @@ void ArraySorter::sortArray()
         }
         delete[] arr;
         arr = nullptr;
-
         inputArrayIndex = 0;
 
         if (inputArraySize % height == 0)
@@ -224,7 +222,7 @@ void ArraySorter::sortArray()
             cout << endl;
         }
         cout << endl;
-        
+
         if (getAbs(sumV(arr) - sumH(arr)) < diff)
         {
             diff = getAbs(sumV(arr) - sumH(arr));
