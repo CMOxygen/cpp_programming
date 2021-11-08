@@ -111,7 +111,8 @@ void Integral::integrate()
         for (int j = 0; j <= intervalsNumber; j++)
         {
             this->table[0][j] = this->step * j;
-            this->table[1][j] = 1 / (1 + getSquare(table[0][j]));
+            // this->table[1][j] = 1 / (1 + getSquare(table[0][j]));
+            this->table[1][j] = getSquare(table[0][j]) * 0.01 + 1;
         }
     }
     for (int i = 1; i < intervalsNumber; i++)
